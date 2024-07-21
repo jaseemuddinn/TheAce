@@ -6,7 +6,7 @@ import { pointsInner, pointsOuter } from "./utils";
 
 const Hero = () => {
   return (
-    <div className="relative h-screen ">
+    <div id="home" className="relative h-screen ">
         <Canvas
           camera={{
             position: [10, -17.5, -15],

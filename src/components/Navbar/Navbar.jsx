@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import HamburgerButton from "../HamburgerButton/Hamburger";
 
-const menuItems = ["Home", "About", "Event", "Contact"];
+const menuItems = ["Home", "About", "Sponsors", "Contact"];
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,7 +14,6 @@ const Navbar = () => {
   const closeMenu = () => {
     setIsOpen(false);
   };
-
 
   const menuVariants = {
     hidden: { x: "-100%" },
@@ -71,7 +70,14 @@ const Navbar = () => {
                 {item}
               </motion.a>
             ))}
-            
+            <div>
+              <button
+                className="md:px-10 md:py-5 px-8 py-3 bg-gray-200 text-black transition duration-500 ease-in-out hover:bg-white text-lg font-semibold rounded-lg"
+                onClick={closeMenu}
+              >
+                Register for the Event
+              </button>
+            </div>
           </motion.div>
         )}
       </AnimatePresence>

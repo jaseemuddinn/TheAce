@@ -9,7 +9,7 @@ import {
 const Sponsors = () => {
   return (
     <>
-        <h1 className="text-white text-center text-4xl md:text-6xl font-bold font-Bruno mb-10">Our Sponsors</h1>
+        <h1 id="sponsors" className="text-white text-center text-4xl md:text-6xl font-bold font-Bruno mb-10">Our Sponsors</h1>
       <div className="w-full flex gap-10 flex-wrap place-content-center px-4 text-slate-900">
         <div className="flex justify-center items-center mb-10">
           <TiltCard
