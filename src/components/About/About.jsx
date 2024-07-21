@@ -42,7 +42,7 @@ function About() {
           </li>
         </ul>
       </div>
-      <div className="w-1/2">
+      <div className="md:w-1/2 w-full">
         {/* <img src={img} alt="theAce" className='rounded-2xl'/> */}
         <HorizontalScrollCarousel />
       </div>
