@@ -9,6 +9,13 @@ function Contact() {
           You can Contact us <br />
           <span className="text-slate-400">through different platform</span>
         </h2>
+        <motion.button
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          className="whitespace-nowrap rounded-lg bg-slate-200 px-4 py-2 font-medium text-black shadow-xl transition-colors hover:bg-slate-300"
+        >
+          More Links
+        </motion.button>
       </div>
       <div className="mb-4 grid grid-cols-12 gap-4">
         <BounceCard className="col-span-12 md:col-span-4">
@@ -41,7 +48,9 @@ function Contact() {
           <CardTitle>And this too</CardTitle>
           <div
             className="absolute left-1/2 transform -translate-x-1/2 right-4 top-16 w-56 h-56 flex justify-center items-center translate-y-8 rounded-t-2xl p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg] bg-cover bg-ceter bg-no-repeat sm:block md:hidden"
-            style={{ backgroundImage: `url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png")` }}
+            style={{
+              backgroundImage: `url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png")`,
+            }}
           ></div>
           <div
             className="absolute bottom-0 left-4 right-4 top-20 translate-y-8 rounded-t-2xl p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg] bg-cover bg-center bg-no-repeat hidden md:block"
