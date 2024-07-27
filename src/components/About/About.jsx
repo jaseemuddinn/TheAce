@@ -15,8 +15,7 @@ function About() {
           VISION{" "}
         </h1>
         <p className="md:text-3xl text-2xl text-white font-semibold leading-tight">
-          An 8 hour tech conference experience and takeover
-          in Greater Noida with AI and Blockchain.
+          An 8 hour tech conference experience and takeover with emerging technologies.
         </p>
         <p className=" text-;g md:text-xl leading-loose">
           <span className="font-bold">
