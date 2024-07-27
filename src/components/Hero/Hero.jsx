@@ -3,21 +3,20 @@ import { Canvas, useFrame } from "@react-three/fiber";
 import { OrbitControls, Sphere } from "@react-three/drei";
 import { pointsInner, pointsOuter } from "./utils";
 
-
 const Hero = () => {
   return (
     <div id="home" className="relative h-screen ">
-        <Canvas
-          camera={{
-            position: [10, -17.5, -15],
-          }}
-          className="relative inset-0 bg-black"
-        >
-          {/* <OrbitControls maxDistance={20} minDistance={10} /> */}
-          <directionalLight />
-          <pointLight position={[-10, 0, -30]} power={10.0} />
-          <PointCircle />
-        </Canvas>
+      <Canvas
+        camera={{
+          position: [10, -17.5, -15],
+        }}
+        className="relative inset-0 bg-black"
+      >
+        {/* <OrbitControls maxDistance={20} minDistance={10} /> */}
+        <directionalLight />
+        <pointLight position={[-10, 0, -30]} power={10.0} />
+        <PointCircle />
+      </Canvas>
       <div className="absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center pointer-events-none">
         <h1 className="text-slate-200 text-6xl md:text-9xl font-bold text-center font-Bruno">
           THE ACE <br />
@@ -25,13 +24,17 @@ const Hero = () => {
         </h1>
         <div className="absolute bottom-0 py-6 flex justify-between items-center w-full md:px-4 px-2 font-semibold text-lg md:text-3xl bg-black ">
           <button className="text-white w-1/3 pointer-events-auto border-r-2 hover:text-[#4440ba]">
-            PARTNER WITH US
+            PARTNER WITH US <br /><span className="text-gray-500 text-lg italic">Opening Soon...</span>
           </button>
+          
+
           <button className="text-white w-1/3 pointer-events-auto border-r-2 hover:text-[#4440ba]">
-            REGISTER
+            REGISTER <br /><span className="text-gray-500 text-lg italic">Opening Soon...</span>
           </button>
+
+
           <button className="text-white w-1/3 pointer-events-auto hover:text-[#4440ba]">
-            APPLY TO SPEAK
+            APPLY TO SPEAK <br /><span className="text-gray-500 text-lg italic">Opening Soon...</span>
           </button>
         </div>
       </div>
@@ -74,4 +77,3 @@ const Point = ({ position, color }) => {
 };
 
 export default Hero;
-
