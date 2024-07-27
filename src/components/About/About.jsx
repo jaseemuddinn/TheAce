@@ -15,7 +15,7 @@ function About() {
           VISION{" "}
         </h1>
         <p className="md:text-3xl text-2xl text-white font-semibold leading-tight">
-          August 31st, 2024 :: An 8 hour tech conference experience and takeover
+          An 8 hour tech conference experience and takeover
           in Greater Noida with AI and Blockchain.
         </p>
         <p className=" text-;g md:text-xl leading-loose">
