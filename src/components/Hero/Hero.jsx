@@ -23,18 +23,31 @@ const Hero = () => {
           <p className="text-2xl md:text-4xl text-right">2024</p>
         </h1>
         <div className="absolute bottom-0 py-6 flex justify-between items-center w-full md:px-4 px-2 font-semibold text-lg md:text-3xl bg-black ">
-          <button className="text-white w-1/3 pointer-events-auto border-r-2 hover:text-[#4440ba]">
-            PARTNER WITH US <br /><span className="text-gray-500 text-lg italic">Opening Soon...</span>
+          <button
+            onClick={() =>
+              window.open("https://www.commudle.com/fill-form/2627", "_blank")
+            }
+            className="text-white w-1/3 pointer-events-auto border-r-2 hover:text-[#4440ba]"
+          >
+            PARTNER WITH US
           </button>
-          
 
-          <button className="text-white w-1/3 pointer-events-auto border-r-2 hover:text-[#4440ba]">
-            REGISTER <br /><span className="text-gray-500 text-lg italic">Opening Soon...</span>
+          <button
+            onClick={() =>
+              window.open("https://www.commudle.com/fill-form/2606", "_blank")
+            }
+            className="text-white w-1/3 pointer-events-auto border-r-2 hover:text-[#4440ba]"
+          >
+            REGISTER NOW
           </button>
 
-
-          <button className="text-white w-1/3 pointer-events-auto hover:text-[#4440ba]">
-            APPLY TO SPEAK <br /><span className="text-gray-500 text-lg italic">Opening Soon...</span>
+          <button
+            onClick={() =>
+              window.open("https://www.commudle.com/fill-form/2622", "_blank")
+            }
+            className="text-white w-1/3 pointer-events-auto hover:text-[#4440ba]"
+          >
+            APPLY TO SPEAK
           </button>
         </div>
       </div>

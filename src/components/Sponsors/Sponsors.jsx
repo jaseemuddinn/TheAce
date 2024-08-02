@@ -5,22 +5,30 @@ import {
   useMotionValue,
   useSpring,
 } from "framer-motion";
+import hackquest from "../../assets/img/hackquest.jpg";
 
 const Sponsors = () => {
   return (
     <>
-        <h1 id="sponsors" className="text-white text-center text-4xl md:text-6xl font-bold font-Bruno mb-10">Our Sponsors</h1>
+      <h1
+        id="sponsors"
+        className="text-white text-center text-4xl md:text-6xl font-bold font-Bruno mb-10"
+      >
+        Our Sponsors
+      </h1>
       <div className="w-full flex gap-10 flex-wrap place-content-center px-4 text-slate-900">
         <div className="flex justify-center items-center mb-10">
           <TiltCard
-            tier={"Power Sponsor"}
+            img={"https://placehold.co/150x150/png"}
+            tier={"Power"}
             sponsorsName={"TBD"}
             backgroundColor={"linear-gradient(to right, #002366, #1E90FF)"}
           />
         </div>
         <div className="flex justify-center items-center mb-10">
           <TiltCard
-            tier={"Title Sponsor"}
+            img={"https://placehold.co/150x150/png"}
+            tier={"Title"}
             sponsorsName={"TBD"}
             backgroundColor={"linear-gradient(to right, #4B0082, #8A2BE2)"}
           />
@@ -28,17 +36,20 @@ const Sponsors = () => {
       </div>
       <div className="flex flex-wrap justify-center items-center gap-20">
         <TiltCard
-          tier={"Platinum Sponsor"}
-          sponsorsName={"TBD"}
+          img={hackquest}
+          tier={"Platinum"}
+          sponsorsName={"HackQuest"}
           backgroundColor={"linear-gradient(to right, #E5E4E2, #B0C4DE)"}
         />
         <TiltCard
-          tier={"Gold Sponsor"}
+          img={"https://placehold.co/150x150/png"}
+          tier={"Gold"}
           sponsorsName={"TBD"}
           backgroundColor={"linear-gradient(to right, #FFD700, #FFEC8B)"}
         />
         <TiltCard
-          tier={"Silver Sponsor"}
+          img={"https://placehold.co/150x150/png"}
+          tier={"Silver"}
           sponsorsName={"TBD"}
           backgroundColor={"linear-gradient(to right, #C0C0C0, #A9A9A9)"}
         />
@@ -50,7 +61,7 @@ const Sponsors = () => {
 const ROTATION_RANGE = 32.5;
 const HALF_ROTATION_RANGE = 32.5 / 2;
 
-const TiltCard = ({ sponsorsName, backgroundColor, tier }) => {
+const TiltCard = ({ sponsorsName, backgroundColor, tier, img }) => {
   const ref = useRef(null);
 
   const x = useMotionValue(0);
@@ -103,13 +114,15 @@ const TiltCard = ({ sponsorsName, backgroundColor, tier }) => {
         }}
         className="absolute inset-4 grid place-content-center rounded-xl bg-white shadow-lg"
       >
-        <h1 className="text-center font-semibold text-xl mb-4">{tier}</h1>
+        <h1 className="text-center font-semibold text-2xl mb-4">{tier}</h1>
         <img
-          src="https://placehold.co/150x150/png"
+          src={img}
           className="rounded-full"
           alt=""
           style={{
             transform: "translateZ(75px)",
+            height: "150px",
+            width: "150px",
           }}
         />
         <p

@@ -3,7 +3,7 @@ import commudleLogo from "../../assets/img/CommudleLogo.svg";
 
 function Register() {
   const navigateToCommudle = () => {
-    window.open("https://commudle.com/theace24", "_blank");
+    window.open("https://www.commudle.com/fill-form/2606", "_blank");
   };
   return (
     <div className="mb-20">
@@ -11,7 +11,6 @@ function Register() {
         <h1 className="text-white text-center pt-10 md:text-5xl text-2xl font-bold font-Bruno">
           REGISTRATION
         </h1>
-        <p className="text-gray-500 text-center italic text-2xl font-bold ">Opening Soon....</p>
         <div className="justify-center flex flex-col items-center gap-8 mt-16">
           <p className="text-white text-center md:text-3xl text-2xl">
             Register for{" "}
