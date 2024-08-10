@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { OrbitControls, Sphere } from "@react-three/drei";
 import { pointsInner, pointsOuter } from "./utils";
+import { div } from "three/examples/jsm/nodes/Nodes.js";
 
 const Hero = () => {
   return (

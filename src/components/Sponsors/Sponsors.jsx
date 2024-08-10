@@ -6,6 +6,7 @@ import {
   useSpring,
 } from "framer-motion";
 import hackquest from "../../assets/img/hackquest.jpg";
+import xyz from '../../assets/img/xyz.svg';
 
 const Sponsors = () => {
   return (
@@ -42,9 +43,9 @@ const Sponsors = () => {
           backgroundColor={"linear-gradient(to right, #E5E4E2, #B0C4DE)"}
         />
         <TiltCard
-          img={"https://placehold.co/150x150/png"}
+          img={xyz}
           tier={"Gold"}
-          sponsorsName={"TBD"}
+          sponsorsName={".XYZ"}
           backgroundColor={"linear-gradient(to right, #FFD700, #FFEC8B)"}
         />
         <TiltCard

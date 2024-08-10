@@ -7,8 +7,8 @@ import Navbar from "./components/Navbar/Navbar";
 import Register from "./components/Register/Register";
 import Sponsors from "./components/Sponsors/Sponsors";
 import Links from "./components/Links/Links";
-import useIntersectionObserver from "./IntersectionObserver";
-import { useState } from "react";
+// import useIntersectionObserver from "./IntersectionObserver";
+// import { useState } from "react";
 
 function App() {
   // const navigate = useNavigate();
@@ -20,7 +20,7 @@ function App() {
   // });
   return (
     <>
-      <Navbar />
+      {/* <Navbar />
       <section id="hero">
         <Hero />
       </section>
@@ -38,13 +38,19 @@ function App() {
       </section>
       <Routes>
         <Route path="/links" element={<Links />} />
+      </Routes> */}
+
+      <Navbar />
+      <Hero />
+      <About />
+      <Register />
+      <Sponsors />
+      <Contact />
+      <Routes>
+        <Route path="/links" element={<Links />} />
       </Routes>
     </>
   );
 }
 
 export default App;
-
-
-
-
