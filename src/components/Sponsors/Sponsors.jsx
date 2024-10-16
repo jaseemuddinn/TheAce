@@ -7,6 +7,9 @@ import {
 } from "framer-motion";
 import hackquest from "../../assets/img/hackquest.jpg";
 import xyz from '../../assets/img/xyz.svg';
+import onnoff from '../../assets/img/onnoff_logo_size.png';
+import mehboob from '../../assets/img/mehboob.jpg';
+import zipin from '../../assets/img/zipintech_logo.jpg';
 
 const Sponsors = () => {
   return (
@@ -20,17 +23,17 @@ const Sponsors = () => {
       <div className="w-full flex gap-10 flex-wrap place-content-center px-4 text-slate-900">
         <div className="flex justify-center items-center mb-10">
           <TiltCard
-            img={"https://placehold.co/150x150/png"}
-            tier={"Power"}
-            sponsorsName={"TBD"}
+            img={onnoff}
+            tier={"Title"}
+            sponsorsName={"OnnOff"}
             backgroundColor={"linear-gradient(to right, #002366, #1E90FF)"}
           />
         </div>
         <div className="flex justify-center items-center mb-10">
           <TiltCard
-            img={"https://placehold.co/150x150/png"}
-            tier={"Title"}
-            sponsorsName={"TBD"}
+            img={zipin}
+            tier={"Power"}
+            sponsorsName={"Zipin Tech"}
             backgroundColor={"linear-gradient(to right, #4B0082, #8A2BE2)"}
           />
         </div>
@@ -49,9 +52,9 @@ const Sponsors = () => {
           backgroundColor={"linear-gradient(to right, #FFD700, #FFEC8B)"}
         />
         <TiltCard
-          img={"https://placehold.co/150x150/png"}
+          img={mehboob}
           tier={"Silver"}
-          sponsorsName={"TBD"}
+          sponsorsName={"MehboobSons"}
           backgroundColor={"linear-gradient(to right, #C0C0C0, #A9A9A9)"}
         />
       </div>
