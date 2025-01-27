@@ -26,7 +26,7 @@ const Hero = () => {
         <div className="absolute bottom-0 py-6 flex justify-between items-center w-full md:px-4 px-2 font-semibold text-lg md:text-3xl bg-black ">
           <button
             onClick={() =>
-              window.open("https://www.commudle.com/fill-form/2627", "_blank")
+              window.open("https://www.commudle.com/communities/the-ace", "_blank")
             }
             className="text-white w-1/3 pointer-events-auto border-r-2 hover:text-[#4440ba]"
           >
@@ -35,7 +35,7 @@ const Hero = () => {
 
           <button
             onClick={() =>
-              window.open("https://www.commudle.com/fill-form/2606", "_blank")
+              window.open("https://www.commudle.com/communities/the-ace", "_blank")
             }
             className="text-white w-1/3 pointer-events-auto border-r-2 hover:text-[#4440ba]"
           >
@@ -44,7 +44,7 @@ const Hero = () => {
 
           <button
             onClick={() =>
-              window.open("https://www.commudle.com/fill-form/2622", "_blank")
+              window.open("https://www.commudle.com/communities/the-ace", "_blank")
             }
             className="text-white w-1/3 pointer-events-auto hover:text-[#4440ba]"
           >
