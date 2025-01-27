@@ -48,7 +48,7 @@ const Navbar = () => {
         onClick={toggleMenu}
         className="fixed top-4 right-4 z-50 p-2 text-white rounded"
       >
-        <HamburgerButton />
+        <HamburgerButton active={isOpen}/>
       </div>
       <AnimatePresence>
         {isOpen && (

@@ -3,8 +3,7 @@ import { MotionConfig, motion } from "framer-motion";
 
 
 
-const HamburgerButton = () => {
-  const [active, setActive] = useState(false);
+const HamburgerButton = ({active}) => {
   return (
     <MotionConfig
       transition={{
