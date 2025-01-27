@@ -5,9 +5,9 @@ import {
   useMotionValue,
   useSpring,
 } from "framer-motion";
-import hackquest from "../../assets/img/hackquest.jpg";
+import wow_dark from "../../assets/img/wow_dark.svg";
 import xyz from '../../assets/img/xyz.svg';
-import onnoff from '../../assets/img/onnoff_logo_size.png';
+import onnoff_invert from '../../assets/img/onnoff_invert.svg';
 import mehboob from '../../assets/img/mehboob.jpg';
 import zipin from '../../assets/img/zipintech_logo.jpg';
 
@@ -22,27 +22,32 @@ const Sponsors = () => {
       </h1>
       <div className="w-full flex gap-10 flex-wrap place-content-center px-4 text-slate-900">
         <div className="flex justify-center items-center mb-10">
-          <TiltCard
-            img={onnoff}
+         <a href="https://onnoff.in" target="_blank"> 
+         <TiltCard
+            img={onnoff_invert}
             tier={"Title"}
             sponsorsName={"OnnOff"}
             backgroundColor={"linear-gradient(to right, #002366, #1E90FF)"}
+            
           />
+          </a>
         </div>
         <div className="flex justify-center items-center mb-10">
+        <a href="https://zipintech.com/" target="_blank">
           <TiltCard
             img={zipin}
             tier={"Power"}
             sponsorsName={"Zipin Tech"}
             backgroundColor={"linear-gradient(to right, #4B0082, #8A2BE2)"}
           />
+          </a>
         </div>
       </div>
       <div className="flex flex-wrap justify-center items-center gap-20">
         <TiltCard
-          img={hackquest}
+          img={wow_dark}
           tier={"Platinum"}
-          sponsorsName={"HackQuest"}
+          sponsorsName={"WoW"}
           backgroundColor={"linear-gradient(to right, #E5E4E2, #B0C4DE)"}
         />
         <TiltCard
