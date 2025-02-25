@@ -74,9 +74,9 @@ const Navbar = () => {
               <button
                 className="md:px-10 md:py-5 px-8 py-3 bg-gray-200 text-black transition duration-500 ease-in-out hover:bg-white text-lg font-semibold rounded-lg"
                 onClick={closeMenu}
-                href="https://www.commudle.com/fill-form/2606"
+                href="https://www.commudle.com/communities/the-ace/events/cognition-season-1"
               >
-                Register for the Event
+                Register for Cognition
               </button>
             </div>
           </motion.div>
